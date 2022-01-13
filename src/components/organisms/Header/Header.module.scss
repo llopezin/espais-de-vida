@@ -1,0 +1,10 @@
+@import "../../../common/style/media-queries/media-queriees.mixins.scss";
+@import "../../../common/style/variables/colours";
+@import "../../../common/style/variables/spacings";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $md;
+}

@@ -1,0 +1,12 @@
+@import "../../../common//style//variables/colours";
+
+.secondary {
+/*   color: $primary;
+  background-color: $primaryLight; */
+}
+
+.primary {
+  background-color: transparent;
+  color: $font;
+  border: solid 2px $btn-primary;
+}

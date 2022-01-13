@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-js",
+    "path": "/blog/",
+    "result": {"data":{"articles":{"nodes":[{"author":{"name":"Hanna Brencher"},"slug":"build-a read-only-API-with-contentful","title":"Build a read only API with contentful"},{"author":{"name":"Jason Carter"},"slug":"code-guidelines best-ones-to-follow","title":"Code guidelines - best ones to follow"},{"author":{"name":"Hanna Brencher"},"slug":"best-tools-of-a-cro-developer","title":"Best tools of a CRO developer"}]}},"pageContext":{}},
+    "staticQueryHashes": []}
