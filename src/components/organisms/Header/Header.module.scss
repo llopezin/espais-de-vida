@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: $lg 0 $s;
+  padding: $lg $md $s;
 
   @include desktop {
     align-items: baseline;
