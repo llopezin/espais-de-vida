@@ -1,5 +1,5 @@
-import React from "react"
-import * as style from "./MenuIcon.module.scss"
+import React from "react";
+import * as style from "./MenuIcon.module.scss";
 
 const MenuIcon = () => {
   return (
@@ -18,7 +18,7 @@ const MenuIcon = () => {
         />
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default MenuIcon
+export default MenuIcon;

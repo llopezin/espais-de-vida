@@ -1,0 +1,9 @@
+@import "../../../style/variables/colours";
+
+.close path {
+  fill: $background;
+}
+
+.close {
+  background-color: $btn-secondary;
+}

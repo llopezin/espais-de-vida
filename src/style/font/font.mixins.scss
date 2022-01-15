@@ -1,0 +1,40 @@
+@import '../variables/colours';
+
+@mixin base-font {
+  font-family: "questrial", Verdana, Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: calc(1rem*0.13);
+  font-size: 1rem;
+}
+
+@mixin main-heading-font {
+  font-family: "valky", Verdana, Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+@mixin section-heading-font {
+  font-family: "valky", Verdana, Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+
+@mixin section-subheading-font {
+  font-family: "questrial", Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: calc(1.6rem*0.13);
+  font-size: 1.6rem;
+}
+
+@mixin logo-font {
+  font-family: "questrial", Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: calc(1.6rem*0.13);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+

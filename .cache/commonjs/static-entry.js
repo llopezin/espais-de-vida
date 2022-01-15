@@ -16,7 +16,7 @@ const path = require(`path`);
 const {
   renderToString,
   renderToStaticMarkup,
-  renderToPipeableStream
+  pipeToNodeWritable
 } = require(`react-dom/server`);
 
 const {
@@ -313,13 +313,13 @@ async function staticPage({
     if (!bodyHtml) {
       try {
         // react 18 enabled
-        if (renderToPipeableStream) {
+        if (pipeToNodeWritable) {
           const writableStream = new WritableAsPromise();
           const {
-            pipe
-          } = renderToPipeableStream(bodyComponent, {
+            startWriting
+          } = pipeToNodeWritable(bodyComponent, writableStream, {
             onCompleteAll() {
-              pipe(writableStream);
+              startWriting();
             },
 
             onError() {}

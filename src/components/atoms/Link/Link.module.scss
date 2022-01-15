@@ -1,14 +1,14 @@
-@import "../../../common/style/variables/colours";
+@import "../../../style/variables/colours";
 
 .prominent {
   border: solid 2px $btn-primary;
- &:hover {
+  &:hover {
     text-decoration: underline;
   }
 }
 
 .navigation {
   &:hover {
-     text-decoration: underline;
-   }
- }
+    text-decoration: underline;
+  }
+}

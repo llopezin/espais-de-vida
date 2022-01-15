@@ -1,9 +1,9 @@
-@import "../../../common/style/font/font.mixins.scss";
+@import "../../../style/font/font.mixins.scss";
 
 .main {
-  @include main-heading-font
+  @include main-heading-font;
 }
 
 .section-heading {
-  @include section-heading-font
+  @include section-heading-font;
 }

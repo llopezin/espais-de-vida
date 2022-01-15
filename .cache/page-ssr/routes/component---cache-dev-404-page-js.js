@@ -16,7 +16,8 @@ function _assertThisInitialized(self) {
   return self;
 }
 
-module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _assertThisInitialized;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -39,11 +40,14 @@ function _extends() {
     }
 
     return target;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  };
+
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _extends.apply(this, arguments);
 }
 
-module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -61,7 +65,8 @@ function _inheritsLoose(subClass, superClass) {
   setPrototypeOf(subClass, superClass);
 }
 
-module.exports = _inheritsLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _inheritsLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -77,7 +82,8 @@ function _interopRequireDefault(obj) {
   };
 }
 
-module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _interopRequireDefault;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -102,7 +108,8 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _objectWithoutPropertiesLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -116,11 +123,14 @@ function _setPrototypeOf(o, p) {
   module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
     o.__proto__ = p;
     return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  };
+
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _setPrototypeOf(o, p);
 }
 
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+module.exports = _setPrototypeOf;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -1747,10 +1757,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
 
 
 
@@ -1764,7 +1774,7 @@ class Dev404Page extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component
       location
     } = this.props;
     const pagePaths = data.allSitePage.nodes.map(node => node.path);
-    const urlState = query_string__WEBPACK_IMPORTED_MODULE_2__.parse(location.search);
+    const urlState = query_string__WEBPACK_IMPORTED_MODULE_3__.parse(location.search);
     const initialPagePathSearchTerms = urlState.filter ? urlState.filter : ``;
     this.state = {
       hasMounted: false,
@@ -1818,12 +1828,12 @@ class Dev404Page extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component
         search
       }
     } = this.props;
-    const searchMap = query_string__WEBPACK_IMPORTED_MODULE_2__.parse(search);
+    const searchMap = query_string__WEBPACK_IMPORTED_MODULE_3__.parse(search);
     searchMap.filter = searchValue;
-    const newSearch = query_string__WEBPACK_IMPORTED_MODULE_2__.stringify(searchMap);
+    const newSearch = query_string__WEBPACK_IMPORTED_MODULE_3__.stringify(searchMap);
 
     if (search !== `?${newSearch}`) {
-      (0,gatsby__WEBPACK_IMPORTED_MODULE_1__.navigate)(`${pathname}?${newSearch}`, {
+      (0,gatsby__WEBPACK_IMPORTED_MODULE_2__.navigate)(`${pathname}?${newSearch}`, {
         replace: true
       });
     }
@@ -1901,7 +1911,7 @@ export default function API (req, res) {
       value: "Submit"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, this.state.pagePaths.map((pagePath, index) => index < 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
       key: pagePath
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
       to: pagePath
     }, pagePath))), this.state.pagePaths.length > 100 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
       style: {
@@ -1913,9 +1923,9 @@ export default function API (req, res) {
 }
 
 Dev404Page.propTypes = {
-  data: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-  custom404: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().element),
-  location: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)
+  data: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object),
+  custom404: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().element),
+  location: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object)
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dev404Page);
 const pagesQuery = "2704779569";
@@ -2112,35 +2122,35 @@ const cleanPath = rawPathname => {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Link": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_1__["default"]),
-/* harmony export */   "withAssetPrefix": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_1__.withAssetPrefix),
-/* harmony export */   "withPrefix": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_1__.withPrefix),
+/* harmony export */   "Link": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "withAssetPrefix": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_2__.withAssetPrefix),
+/* harmony export */   "withPrefix": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_2__.withPrefix),
 /* harmony export */   "graphql": () => (/* binding */ graphql),
-/* harmony export */   "parsePath": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_1__.parsePath),
-/* harmony export */   "navigate": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_1__.navigate),
-/* harmony export */   "useScrollRestoration": () => (/* reexport safe */ gatsby_react_router_scroll__WEBPACK_IMPORTED_MODULE_2__.useScrollRestoration),
+/* harmony export */   "parsePath": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_2__.parsePath),
+/* harmony export */   "navigate": () => (/* reexport safe */ gatsby_link__WEBPACK_IMPORTED_MODULE_2__.navigate),
+/* harmony export */   "useScrollRestoration": () => (/* reexport safe */ gatsby_react_router_scroll__WEBPACK_IMPORTED_MODULE_3__.useScrollRestoration),
 /* harmony export */   "StaticQueryContext": () => (/* binding */ StaticQueryContext),
 /* harmony export */   "StaticQuery": () => (/* binding */ StaticQuery),
-/* harmony export */   "PageRenderer": () => (/* reexport default from dynamic */ _public_page_renderer__WEBPACK_IMPORTED_MODULE_3___default.a),
+/* harmony export */   "PageRenderer": () => (/* reexport default from dynamic */ _public_page_renderer__WEBPACK_IMPORTED_MODULE_4___default.a),
 /* harmony export */   "useStaticQuery": () => (/* binding */ useStaticQuery),
 /* harmony export */   "prefetchPathname": () => (/* binding */ prefetchPathname)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var gatsby_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby-link */ "./node_modules/gatsby-link/index.js");
-/* harmony import */ var gatsby_react_router_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-react-router-scroll */ "./node_modules/gatsby-react-router-scroll/index.js");
-/* harmony import */ var _public_page_renderer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./public-page-renderer */ "./.cache/public-page-renderer.js");
-/* harmony import */ var _public_page_renderer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_page_renderer__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./loader */ "./.cache/loader.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-link */ "./node_modules/gatsby-link/index.js");
+/* harmony import */ var gatsby_react_router_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-react-router-scroll */ "./node_modules/gatsby-react-router-scroll/index.js");
+/* harmony import */ var _public_page_renderer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./public-page-renderer */ "./.cache/public-page-renderer.js");
+/* harmony import */ var _public_page_renderer__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_page_renderer__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _loader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./loader */ "./.cache/loader.js");
 
 
 
 
 
 
-const prefetchPathname = _loader__WEBPACK_IMPORTED_MODULE_4__["default"].enqueue;
+const prefetchPathname = _loader__WEBPACK_IMPORTED_MODULE_5__["default"].enqueue;
 const StaticQueryContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createContext({});
 
 function StaticQueryDataRenderer({
@@ -2196,10 +2206,10 @@ useStaticQuery(graphql\`${query}\`);
 };
 
 StaticQuery.propTypes = {
-  data: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object),
-  query: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string.isRequired),
-  render: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().func),
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().func)
+  data: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object),
+  query: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired),
+  render: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func),
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func)
 };
 
 function graphql() {
@@ -3102,13 +3112,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Redirect": () => (/* binding */ Redirect),
 /* harmony export */   "Router": () => (/* binding */ Router),
 /* harmony export */   "ServerLocation": () => (/* binding */ ServerLocation),
-/* harmony export */   "createHistory": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_4__.createHistory),
-/* harmony export */   "createMemorySource": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_4__.createMemorySource),
+/* harmony export */   "createHistory": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_5__.createHistory),
+/* harmony export */   "createMemorySource": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_5__.createMemorySource),
 /* harmony export */   "isRedirect": () => (/* binding */ isRedirect),
-/* harmony export */   "navigate": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_4__.navigate),
+/* harmony export */   "navigate": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_5__.navigate),
 /* harmony export */   "redirectTo": () => (/* binding */ redirectTo),
-/* harmony export */   "globalHistory": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_4__.globalHistory),
-/* harmony export */   "matchPath": () => (/* reexport safe */ _lib_utils__WEBPACK_IMPORTED_MODULE_3__.match),
+/* harmony export */   "globalHistory": () => (/* reexport safe */ _lib_history__WEBPACK_IMPORTED_MODULE_5__.globalHistory),
+/* harmony export */   "matchPath": () => (/* reexport safe */ _lib_utils__WEBPACK_IMPORTED_MODULE_4__.match),
 /* harmony export */   "useLocation": () => (/* binding */ useLocation),
 /* harmony export */   "useNavigate": () => (/* binding */ useNavigate),
 /* harmony export */   "useParams": () => (/* binding */ useParams),
@@ -3117,13 +3127,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/invariant.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-lifecycles-compat */ "./.cache/react-lifecycles-compat.js");
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lib/utils */ "./node_modules/@gatsbyjs/reach-router/es/lib/utils.js");
-/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/history */ "./node_modules/@gatsbyjs/reach-router/es/lib/history.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/invariant.js");
+/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-lifecycles-compat */ "./.cache/react-lifecycles-compat.js");
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "./node_modules/@gatsbyjs/reach-router/es/lib/utils.js");
+/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "./node_modules/@gatsbyjs/reach-router/es/lib/history.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -3259,10 +3269,10 @@ var LocationProvider = function (_React$Component) {
 
 
 LocationProvider.defaultProps = {
-  history: _lib_history__WEBPACK_IMPORTED_MODULE_4__.globalHistory
+  history: _lib_history__WEBPACK_IMPORTED_MODULE_5__.globalHistory
 };
  true ? LocationProvider.propTypes = {
-  history: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object.isRequired)
+  history: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().object.isRequired)
 } : 0;
 var ServerLocation = function ServerLocation(_ref2) {
   var url = _ref2.url,
@@ -3303,7 +3313,7 @@ var ServerLocation = function ServerLocation(_ref2) {
 var BaseContext = createNamedContext("Base", {
   baseuri: "/",
   basepath: "/",
-  navigate: _lib_history__WEBPACK_IMPORTED_MODULE_4__.globalHistory.navigate
+  navigate: _lib_history__WEBPACK_IMPORTED_MODULE_5__.globalHistory.navigate
 });
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -3352,7 +3362,7 @@ var RouterImpl = function (_React$PureComponent) {
     var pathname = location.pathname;
 
 
-    var match = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.pick)(routes, pathname);
+    var match = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.pick)(routes, pathname);
 
     if (match) {
       var params = match.params,
@@ -3368,7 +3378,7 @@ var RouterImpl = function (_React$PureComponent) {
         uri: uri,
         location: location,
         navigate: function navigate(to, options) {
-          return _navigate2((0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(to, uri), options);
+          return _navigate2((0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(to, uri), options);
         }
       });
 
@@ -3552,7 +3562,7 @@ var FocusHandlerImpl = function (_React$Component2) {
   return FocusHandlerImpl;
 }((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
 
-(0,react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_2__.polyfill)(FocusHandlerImpl);
+(0,react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__.polyfill)(FocusHandlerImpl);
 
 var k = function k() {};
 
@@ -3589,10 +3599,10 @@ var Link = forwardRef(function (_ref4, ref) {
               getProps = _props$getProps === undefined ? k : _props$getProps,
               anchorProps = _objectWithoutProperties(props, ["to", "state", "replace", "getProps"]);
 
-          var href = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(to, baseuri);
+          var href = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(to, baseuri);
           var encodedHref = encodeURI(href);
           var isCurrent = location.pathname === encodedHref;
-          var isPartiallyCurrent = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.startsWith)(location.pathname, encodedHref);
+          var isPartiallyCurrent = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.startsWith)(location.pathname, encodedHref);
 
           return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", _extends({
             ref: ref || innerRef,
@@ -3609,7 +3619,7 @@ var Link = forwardRef(function (_ref4, ref) {
                       key = _location$state.key,
                       restState = _objectWithoutProperties(_location$state, ["key"]);
 
-                  shouldReplace = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.shallowCompare)(_extends({}, state), restState);
+                  shouldReplace = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.shallowCompare)(_extends({}, state), restState);
                 }
                 navigate(href, {
                   state: state,
@@ -3627,7 +3637,7 @@ var Link = forwardRef(function (_ref4, ref) {
 Link.displayName = "Link";
 
  true ? Link.propTypes = {
-  to: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string.isRequired)
+  to: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)
 } : 0;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -3666,8 +3676,8 @@ var RedirectImpl = function (_React$Component3) {
         props = _objectWithoutProperties(_props3, ["navigate", "to", "from", "replace", "state", "noThrow", "baseuri"]);
 
     Promise.resolve().then(function () {
-      var resolvedTo = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(to, baseuri);
-      navigate((0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.insertParams)(resolvedTo, props), { replace: replace, state: state });
+      var resolvedTo = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(to, baseuri);
+      navigate((0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.insertParams)(resolvedTo, props), { replace: replace, state: state });
     });
   };
 
@@ -3682,8 +3692,8 @@ var RedirectImpl = function (_React$Component3) {
         baseuri = _props4.baseuri,
         props = _objectWithoutProperties(_props4, ["navigate", "to", "from", "replace", "state", "noThrow", "baseuri"]);
 
-    var resolvedTo = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(to, baseuri);
-    if (!noThrow) redirectTo((0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.insertParams)(resolvedTo, props));
+    var resolvedTo = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(to, baseuri);
+    if (!noThrow) redirectTo((0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.insertParams)(resolvedTo, props));
     return null;
   };
 
@@ -3708,8 +3718,8 @@ var Redirect = function Redirect(props) {
 };
 
  true ? Redirect.propTypes = {
-  from: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string),
-  to: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string.isRequired)
+  from: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
+  to: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string.isRequired)
 } : 0;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -3728,8 +3738,8 @@ var Match = function Match(_ref8) {
           var navigate = _ref10.navigate,
               location = _ref10.location;
 
-          var resolvedPath = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(path, baseuri);
-          var result = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.match)(resolvedPath, location.pathname);
+          var resolvedPath = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(path, baseuri);
+          var result = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.match)(resolvedPath, location.pathname);
           return children({
             navigate: navigate,
             location: location,
@@ -3776,7 +3786,7 @@ var useParams = function useParams() {
 
   var location = useLocation();
 
-  var results = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.match)(context.basepath, location.pathname);
+  var results = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.match)(context.basepath, location.pathname);
 
   return results ? results.params : null;
 };
@@ -3793,8 +3803,8 @@ var useMatch = function useMatch(path) {
 
   var location = useLocation();
 
-  var resolvedPath = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.resolve)(path, context.baseuri);
-  var result = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.match)(resolvedPath, location.pathname);
+  var resolvedPath = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.resolve)(path, context.baseuri);
+  var result = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.match)(resolvedPath, location.pathname);
   return result ? _extends({}, result.params, {
     uri: result.uri,
     path: path
@@ -3816,11 +3826,11 @@ var createRoute = function createRoute(basepath) {
     if (element.type === (react__WEBPACK_IMPORTED_MODULE_0___default().Fragment) && element.props.children) {
       return react__WEBPACK_IMPORTED_MODULE_0___default().Children.map(element.props.children, createRoute(basepath));
     }
-    !(element.props.path || element.props.default || element.type === Redirect) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_1___default()(false, "<Router>: Children of <Router> must have a `path` or `default` prop, or be a `<Redirect>`. None found on element type `" + element.type + "`") : 0 : void 0;
+    !(element.props.path || element.props.default || element.type === Redirect) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_2___default()(false, "<Router>: Children of <Router> must have a `path` or `default` prop, or be a `<Redirect>`. None found on element type `" + element.type + "`") : 0 : void 0;
 
-    !!(element.type === Redirect && (!element.props.from || !element.props.to)) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_1___default()(false, "<Redirect from=\"" + element.props.from + "\" to=\"" + element.props.to + "\"/> requires both \"from\" and \"to\" props when inside a <Router>.") : 0 : void 0;
+    !!(element.type === Redirect && (!element.props.from || !element.props.to)) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_2___default()(false, "<Redirect from=\"" + element.props.from + "\" to=\"" + element.props.to + "\"/> requires both \"from\" and \"to\" props when inside a <Router>.") : 0 : void 0;
 
-    !!(element.type === Redirect && !(0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__.validateRedirect)(element.props.from, element.props.to)) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_1___default()(false, "<Redirect from=\"" + element.props.from + " to=\"" + element.props.to + "\"/> has mismatched dynamic segments, ensure both paths have the exact same dynamic segments.") : 0 : void 0;
+    !!(element.type === Redirect && !(0,_lib_utils__WEBPACK_IMPORTED_MODULE_4__.validateRedirect)(element.props.from, element.props.to)) ?  true ? invariant__WEBPACK_IMPORTED_MODULE_2___default()(false, "<Redirect from=\"" + element.props.from + " to=\"" + element.props.to + "\"/> has mismatched dynamic segments, ensure both paths have the exact same dynamic segments.") : 0 : void 0;
 
     if (element.props.default) {
       return { value: element, default: true };

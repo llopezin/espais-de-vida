@@ -1,5 +1,5 @@
-@import '../../../common/style/font/font.mixins.scss';
+@import "../../../style/font/font.mixins.scss";
 
 .logo {
-    @include logo-font
+  @include logo-font;
 }

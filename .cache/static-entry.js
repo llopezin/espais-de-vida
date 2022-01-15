@@ -3,7 +3,7 @@ const path = require(`path`)
 const {
   renderToString,
   renderToStaticMarkup,
-  renderToPipeableStream,
+  pipeToNodeWritable,
 } = require(`react-dom/server`)
 const { ServerLocation, Router, isRedirect } = require(`@gatsbyjs/reach-router`)
 const merge = require(`deepmerge`)
@@ -279,14 +279,18 @@ export default async function staticPage({
     if (!bodyHtml) {
       try {
         // react 18 enabled
-        if (renderToPipeableStream) {
+        if (pipeToNodeWritable) {
           const writableStream = new WritableAsPromise()
-          const { pipe } = renderToPipeableStream(bodyComponent, {
-            onCompleteAll() {
-              pipe(writableStream)
-            },
-            onError() {},
-          })
+          const { startWriting } = pipeToNodeWritable(
+            bodyComponent,
+            writableStream,
+            {
+              onCompleteAll() {
+                startWriting()
+              },
+              onError() {},
+            }
+          )
 
           bodyHtml = await writableStream
         } else {
