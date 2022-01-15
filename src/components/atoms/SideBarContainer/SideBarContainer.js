@@ -7,7 +7,7 @@ const SideBarContainer = ({ children, close }) => {
   return (
     <div className={style.container}>
       <div className={style.sideBar}>
-        {children}
+        <div className={style.inner}>{children}</div>
         <div className={style.closeBtnWrap}>
           <Button label="close" onClick={close}>
             <CloseIcon />

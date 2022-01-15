@@ -15,6 +15,10 @@
   }
 }
 
+.inner {
+  margin-top: $s;
+}
+
 .sideBar {
   position: relative;
   flex-grow: 1;
@@ -37,7 +41,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: $xs;
+  margin: $md;
 }
 
 @keyframes appear-left {
