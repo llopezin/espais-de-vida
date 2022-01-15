@@ -3,12 +3,17 @@
 .prominent {
   color: $font;
   border: solid 2px $btn-primary;
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .secondary,
 .secondary:visited {
   color: $font-secondary;
+}
+
+.prominent,
+.primary,
+.secondary {
+  &:hover {
+    text-decoration: underline;
+  }
 }

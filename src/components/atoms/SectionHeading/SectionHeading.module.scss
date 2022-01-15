@@ -1,9 +1,11 @@
 @import "../../../style/font/font.mixins.scss";
+@import "../../../style/media-queries/media-queries.mixins.scss";
 
 .main {
   @include main-heading-font;
 }
 
-.section-heading {
+.standard {
   @include section-heading-font;
+  text-align: center;
 }
