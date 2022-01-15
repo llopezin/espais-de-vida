@@ -1,7 +1,12 @@
-main {
+main,
+header,
+footer {
   max-width: 1080px;
   margin: auto;
-  padding: 1.25rem;
+}
+
+main {
+  padding: 1rem;
 }
 
 section {
