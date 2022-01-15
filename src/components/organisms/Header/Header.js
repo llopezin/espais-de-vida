@@ -25,9 +25,9 @@ const Header = () => {
       {showNav && (
         <SideBarContainer close={toggleNav}>
           <HorizontalNav>
-            <Link to={`/`} text="inicio" />
-            <Link to={`/about`} text="sobre mi" />
-            <Link to={`/contact`} text="contacto" />
+            <Link to={`/`} text="inicio" className="secondary" />
+            <Link to={`/about`} text="sobre mi" className="secondary" />
+            <Link to={`/contact`} text="contacto" className="secondary" />
           </HorizontalNav>
         </SideBarContainer>
       )}

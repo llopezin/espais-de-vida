@@ -12,3 +12,8 @@
     text-decoration: underline;
   }
 }
+
+.secondary,
+.secondary:visited {
+  color: $font-secondary;
+}
