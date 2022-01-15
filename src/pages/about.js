@@ -1,12 +1,12 @@
-import React from 'react';
-import BasicPageLayout from "../templates/BasicPageLayout" 
+import React from "react";
+import BasicPageLayout from "../templates/BasicPageLayout";
 
 const about = () => {
-    return (
-        <BasicPageLayout>
-            About page
-        </BasicPageLayout>
-    )
-}
+  return (
+    <BasicPageLayout>
+      <section>About page</section>
+    </BasicPageLayout>
+  );
+};
 
-export default about
+export default about;

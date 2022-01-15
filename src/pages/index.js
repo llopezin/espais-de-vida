@@ -1,8 +1,13 @@
 import "../style/_index.scss";
 import React from "react";
-import HorizontalNav from "../components/molecules/HorizontalNav/HorizontalNav";
+import Menu from "../components/atoms/Menu/Menu";
 import Link from "../components/atoms/Link/Link";
+import BasicPageLayout from "../templates/BasicPageLayout";
 
 export default function Home() {
-  return <h1>HOME</h1>;
+  return (
+    <BasicPageLayout>
+      <section>Inicio</section>
+    </BasicPageLayout>
+  );
 }
