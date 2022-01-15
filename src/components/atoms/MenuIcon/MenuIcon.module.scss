@@ -1,5 +1,9 @@
 @import "../../../style/variables/colours";
 
-.menu-icon {
+.menu-icon path {
   fill: $font;
+}
+
+.menu-icon {
+  margin-top: -4px; //aligns svg to top of container
 }
