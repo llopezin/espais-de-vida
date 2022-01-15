@@ -1,4 +1,5 @@
 @import "../../../style/variables/colours";
+@import "../../../style/media-queries/media-queries.mixins.scss";
 
 .menu-icon path {
   fill: $font;
@@ -6,4 +7,10 @@
 
 .menu-icon {
   margin-top: -4px; //aligns svg to top of container
+}
+
+.menu-icon-wrap {
+  @include desktop {
+    display: none;
+  }
 }

@@ -1,27 +1,25 @@
 @import "../../../style/variables/colours";
 @import "../../../style/media-queries/media-queries.mixins.scss";
 
-.horizontalNav {
+.menu {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0 0;
   @include desktop {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
-.horizontalNav a {
-  padding-top: 0.75rem;
-  @include desktop {
-    padding-right: 1rem;
+.menu a {
+  padding: 1rem;
+  @include mobile-and-tablet {
+    padding-left: 0rem;
   }
 }
 
-.horizontalNav a:not(:last-of-type) {
+.menu a:not(:last-of-type) {
   border-bottom: solid 1px $font;
-  padding-bottom: 0.75rem;
   @include desktop {
-    flex-direction: row;
     border-bottom: none;
   }
 }

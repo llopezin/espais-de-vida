@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
-import * as style from "./SideBarContainer.module.scss";
 import CloseIcon from "../CloseIcon/CloseIcon";
+import * as style from "./SideBarContainer.module.scss";
 
 const SideBarContainer = ({ children, close }) => {
   return (

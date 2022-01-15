@@ -3,7 +3,7 @@ import * as style from "./MenuIcon.module.scss";
 
 const MenuIcon = () => {
   return (
-    <div>
+    <div className={style.menuIconWrap}>
       <svg
         className={style.menuIcon}
         xmlns="http://www.w3.org/2000/svg"

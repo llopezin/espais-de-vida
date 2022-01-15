@@ -1,3 +1,5 @@
+@import "./variables/colours";
+
 html,
 body,
 div,
@@ -60,7 +62,7 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: $font;
 }
 
 * {

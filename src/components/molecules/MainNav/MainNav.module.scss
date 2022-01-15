@@ -1,0 +1,14 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.mobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  width: max(35%, 320px);
+  @include mobile-and-tablet {
+    display: none;
+  }
+}

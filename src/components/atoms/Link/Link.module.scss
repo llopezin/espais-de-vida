@@ -1,13 +1,8 @@
 @import "../../../style/variables/colours";
 
 .prominent {
+  color: $font;
   border: solid 2px $btn-primary;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.navigation {
   &:hover {
     text-decoration: underline;
   }

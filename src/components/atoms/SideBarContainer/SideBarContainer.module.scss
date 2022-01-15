@@ -10,6 +10,7 @@
   top: 0;
   bottom: 0;
   left: 0;
+  box-shadow: 5px 0 6px $shadow;
   @include desktop {
     display: none;
   }
