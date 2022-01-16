@@ -1,13 +1,14 @@
-import React from 'react'
-import * as style from './Button.module.scss'
+import React from "react";
+import PropTypes from "prop-types";
+import * as style from "./Button.module.scss";
 
-let Button = ({
+const Button = ({
   text,
   className,
   label,
   onClick,
   disabled = false,
-  children
+  children,
 }) => {
   return (
     <button
@@ -18,7 +19,15 @@ let Button = ({
     >
       {text || children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
+
+Button.propTypes = {
+  text: PropTypes.string,
+  className: PropTypes.string,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+};

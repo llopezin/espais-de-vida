@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import PropTypes from "prop-types";
 import CloseIcon from "../CloseIcon/CloseIcon";
 import * as style from "./SideBarContainer.module.scss";
 
@@ -20,3 +21,7 @@ const SideBarContainer = ({ children, close }) => {
 };
 
 export default SideBarContainer;
+
+SideBarContainer.propTypes = {
+  close: PropTypes.func,
+};
