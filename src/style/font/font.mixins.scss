@@ -14,8 +14,11 @@
   color: $font;
   letter-spacing: 1px;
   font-size: $xxl;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 600;
+  @include mobile-and-tablet {
+    font-size: $lg;
+  }
 }
 
 @mixin section-heading-font {
@@ -44,5 +47,20 @@
   text-transform: uppercase;
   @include mobile-and-tablet {
     font-size: $md;
+  }
+}
+
+@mixin text-decoration($width) {
+  position: relative;
+  &::after {
+    @include desktop {
+      content: "";
+      position: absolute;
+      width: $width;
+      height: 0.625rem;
+      bottom: -1.25rem;
+      left: calc(50% - ($width/2));
+      background-color: $text-detailing;
+    }
   }
 }

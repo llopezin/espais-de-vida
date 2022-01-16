@@ -2,24 +2,19 @@
 @import "../../../style/media-queries/media-queries.mixins.scss";
 
 .main {
+  text-align: center;
   @include main-heading-font;
+  @include text-decoration((10rem));
+  @include mobile-and-tablet {
+    text-align: right;
+  }
+}
+
+.single {
 }
 
 .standard {
-  position: relative;
   text-align: center;
   @include section-heading-font;
-}
-
-.standard::after {
-  $width: 6rem;
-  @include desktop {
-    content: "";
-    position: absolute;
-    width: $width;
-    height: 0.625rem;
-    bottom: -1.25rem;
-    left: calc(50% - ($width/2));
-    background-color: $text-detailing;
-  }
+  @include text-decoration((6rem));
 }
