@@ -6,7 +6,7 @@ const about = () => {
   return (
     <BasicPageLayout>
       <section>
-        <SectionHeading text="Sobre mi" />
+        <SectionHeading text="una frase corta sobre ti" type="single" />
       </section>
     </BasicPageLayout>
   );

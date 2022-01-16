@@ -24,8 +24,8 @@
 }
 
 @mixin main-heading-font {
-  @include base-heading($xxl, $xl, $lg);
   text-transform: uppercase;
+  @include base-heading($xxl, $xl, $lg);
 }
 
 @mixin section-heading-font {
@@ -33,7 +33,8 @@
 }
 
 @mixin single-section-heading-font {
-  @include base-heading($xl, $lg, $lg);
+  text-transform: uppercase;
+  @include base-heading($xxl, $xl, $xl);
 }
 
 @mixin section-subheading-font {

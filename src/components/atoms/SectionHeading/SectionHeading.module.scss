@@ -3,14 +3,19 @@
 
 .main {
   text-align: center;
-  @include main-heading-font;
-  @include text-decoration((10rem));
-  @include mobile-and-tablet {
+  @include mobile {
     text-align: right;
   }
+  @include main-heading-font;
+  @include text-decoration((10rem));
 }
 
 .single {
+  max-width: 9ch;
+  @include mobile {
+    max-width: 8ch;
+  }
+  @include single-section-heading-font;
 }
 
 .standard {
