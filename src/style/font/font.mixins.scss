@@ -2,48 +2,46 @@
 @import "../variables/font-sizes";
 @import "../media-queries/media-queries.mixins.scss";
 
-@mixin base-font {
+@mixin base-font($size) {
   font-family: "questrial", Verdana, Geneva, Tahoma, sans-serif;
   color: $font;
-  letter-spacing: calc(1rem * 0.13);
-  font-size: 1rem;
+  letter-spacing: calc($size * 0.13);
+  font-size: $size;
+}
+
+@mixin base-heading($size, $tablet-size, $mobile-size) {
+  font-family: "valky", Verdana, Geneva, Tahoma, sans-serif;
+  color: $font;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: $size;
+  @include tablet {
+    font-size: $tablet-size;
+  }
+  @include mobile {
+    font-size: $mobile-size;
+  }
 }
 
 @mixin main-heading-font {
-  font-family: "valky", Verdana, Geneva, Tahoma, sans-serif;
-  color: $font;
-  letter-spacing: 1px;
-  font-size: $xxl;
+  @include base-heading($xxl, $xl, $lg);
   text-transform: uppercase;
-  font-weight: 600;
-  @include mobile-and-tablet {
-    font-size: $lg;
-  }
 }
 
 @mixin section-heading-font {
-  font-family: "valky", Verdana, Geneva, Tahoma, sans-serif;
-  color: $font;
-  letter-spacing: 1px;
-  font-size: $xl;
-  font-weight: 600;
-  @include mobile-and-tablet {
-    font-size: $lg;
-  }
+  @include base-heading($xl, $lg, $lg);
+}
+
+@mixin single-section-heading-font {
+  @include base-heading($xl, $lg, $lg);
 }
 
 @mixin section-subheading-font {
-  font-family: "questrial", Geneva, Tahoma, sans-serif;
-  color: $font;
-  letter-spacing: calc($lg * 0.13);
-  font-size: $lg;
+  @include base-font($lg);
 }
 
 @mixin logo-font {
-  font-family: "questrial", Geneva, Tahoma, sans-serif;
-  color: $font;
-  letter-spacing: calc($logo * 0.13);
-  font-size: $logo;
+  @include base-font($logo);
   text-transform: uppercase;
   @include mobile-and-tablet {
     font-size: $md;
