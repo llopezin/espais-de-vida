@@ -39,7 +39,10 @@
 @mixin logo-font {
   font-family: "questrial", Geneva, Tahoma, sans-serif;
   color: $font;
-  letter-spacing: calc($lg * 0.13);
-  font-size: $lg;
+  letter-spacing: calc($logo * 0.13);
+  font-size: $logo;
   text-transform: uppercase;
+  @include mobile-and-tablet {
+    font-size: $md;
+  }
 }
