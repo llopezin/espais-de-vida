@@ -6,6 +6,20 @@
 }
 
 .standard {
-  @include section-heading-font;
+  position: relative;
   text-align: center;
+  @include section-heading-font;
+}
+
+.standard::after {
+  $width: 6rem;
+  @include desktop {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: 0.625rem;
+    bottom: -1.25rem;
+    left: calc(50% - ($width/2));
+    background-color: $text-detailing;
+  }
 }
