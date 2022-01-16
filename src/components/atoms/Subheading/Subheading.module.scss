@@ -1,0 +1,24 @@
+@import "../../../style/font/font.mixins.scss";
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.main {
+  max-width: 34ch;
+  text-align: center;
+  @include mobile {
+    text-align: right;
+  }
+  @include subheading-main;
+}
+
+.primary {
+  text-align: center;
+  @include subheading-primary;
+}
+
+.secondary {
+  text-align: left;
+  @include mobile {
+    text-align: center;
+  }
+  @include subheading-secondary;
+}

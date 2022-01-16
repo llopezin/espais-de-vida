@@ -2,11 +2,17 @@
 @import "../variables/font-sizes";
 @import "../media-queries/media-queries.mixins.scss";
 
-@mixin base-font($size) {
+@mixin base-font($size, $tablet-size, $mobile-size) {
   font-family: "questrial", Verdana, Geneva, Tahoma, sans-serif;
   color: $font;
   letter-spacing: calc($size * 0.13);
   font-size: $size;
+  @include tablet {
+    font-size: $tablet-size;
+  }
+  @include mobile {
+    font-size: $mobile-size;
+  }
 }
 
 @mixin base-heading($size, $tablet-size, $mobile-size) {
@@ -23,6 +29,7 @@
   }
 }
 
+//headings
 @mixin main-heading-font {
   text-transform: uppercase;
   @include base-heading($xxl, $xl, $lg);
@@ -37,12 +44,23 @@
   @include base-heading($xxl, $xl, $xl);
 }
 
-@mixin section-subheading-font {
-  @include base-font($lg);
+//subheadings
+@mixin subheading-main {
+  text-transform: uppercase;
+  @include base-font($md, $base, $base);
 }
 
+@mixin subheading-primary {
+  @include base-font($logo, $md, $md);
+}
+
+@mixin subheading-secondary {
+  @include base-font($logo, $md, $md);
+}
+
+//logo
 @mixin logo-font {
-  @include base-font($logo);
+  @include base-font($logo, $logo, $logo);
   text-transform: uppercase;
   @include mobile-and-tablet {
     font-size: $md;

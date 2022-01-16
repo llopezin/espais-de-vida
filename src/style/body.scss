@@ -1,4 +1,4 @@
 body {
-  @include base-font(1rem);
+  @include base-font(1rem, 1rem, 1rem);
   background-color: $background;
 }
