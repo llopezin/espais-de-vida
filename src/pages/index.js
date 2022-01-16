@@ -1,13 +1,15 @@
-import "../style/_index.scss";
 import React from "react";
-import Menu from "../components/atoms/Menu/Menu";
-import Link from "../components/atoms/Link/Link";
+import SectionHeading from "../components/atoms/SectionHeading/SectionHeading";
 import BasicPageLayout from "../templates/BasicPageLayout";
 
-export default function Home() {
+const home = () => {
   return (
     <BasicPageLayout>
-      <section>Inicio</section>
+      <section>
+        <SectionHeading text="espacios de vida" type="main" />
+      </section>
     </BasicPageLayout>
   );
-}
+};
+
+export default home;

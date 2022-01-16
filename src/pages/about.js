@@ -6,7 +6,7 @@ const about = () => {
   return (
     <BasicPageLayout>
       <section>
-        <SectionHeading text="Tu espacio de vida en València o Jávea" />
+        <SectionHeading text="Sobre mi" />
       </section>
     </BasicPageLayout>
   );
