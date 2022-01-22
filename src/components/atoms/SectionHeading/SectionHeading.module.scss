@@ -7,7 +7,6 @@
     text-align: right;
   }
   @include main-heading-font;
-  @include text-decoration((10rem));
 }
 
 .single {
@@ -21,5 +20,4 @@
 .standard {
   text-align: center;
   @include section-heading-font;
-  @include text-decoration((6rem));
 }

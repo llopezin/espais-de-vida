@@ -1,0 +1,50 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  @include mobile-and-tablet {
+    display: block;
+  }
+}
+
+.top,
+.bottom,
+.image {
+  padding: 2rem;
+}
+
+.image {
+  grid-row: 1 / 3;
+  opacity: 0.85;
+  border-radius: 10px;
+}
+
+.imgRight .top {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.imgRight .bottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.imgRight .image {
+  grid-column: 2 / 3;
+}
+
+.imgLeft .top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.imgLeft .bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 2;
+}
+
+.imgLeft .image {
+  grid-column: 1 / 2;
+}

@@ -6,9 +6,6 @@
   height: 0.625rem;
   margin: $xs auto $md;
   background-color: $text-detailing;
-  @include mobile {
-    margin-right: 0;
-  }
 }
 
 .md {
@@ -17,4 +14,7 @@
 
 .separator.lg {
   width: 10rem;
+  @include mobile {
+    margin-right: 0;
+  }
 }

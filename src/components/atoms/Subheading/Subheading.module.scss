@@ -2,9 +2,11 @@
 @import "../../../style/media-queries/media-queries.mixins.scss";
 
 .main {
+  margin: auto;
   max-width: 34ch;
   text-align: center;
   @include mobile {
+    margin-right: 0;
     text-align: right;
   }
   @include subheading-main;
