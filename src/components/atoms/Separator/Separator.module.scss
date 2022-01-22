@@ -1,0 +1,20 @@
+@import "../../../style/variables/colours";
+@import "../../../style/variables/spacings";
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.separator {
+  height: 0.625rem;
+  margin: $xs auto $md;
+  background-color: $text-detailing;
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.md {
+  width: 6rem;
+}
+
+.separator.lg {
+  width: 10rem;
+}
