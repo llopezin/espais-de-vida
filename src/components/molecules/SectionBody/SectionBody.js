@@ -9,8 +9,12 @@ const SectionBody = ({
   type = "imgRight",
 }) => {
   return (
-    <div className={`${style.wrap} ${style[type]}`}>
-      <div className={style.top}>{topContent}</div>
+    <div
+      className={`${style.wrap} ${style[type]} ${
+        !topContent && style.noTopContent
+      }`}
+    >
+      {topContent && <div className={style.top}>{topContent}</div>}
       <div className={style.image}>{image}</div>
       <div className={style.bottom}>{bottomContent}</div>
     </div>

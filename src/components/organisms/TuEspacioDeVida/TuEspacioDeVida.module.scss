@@ -1,0 +1,36 @@
+@import "../../../style/variables/spacings";
+@import "../../../style/media-queries/media-queries.mixins.scss";
+@import "../../../style/variables/spacings";
+@import "../../../style/variables/img-sizes";
+
+.bottomInner,
+.bottom {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  @include mobile-and-tablet {
+    text-align: center;
+  }
+}
+
+.bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottomP {
+  margin-top: $md;
+  line-height: 2.125rem;
+}
+
+.bottomP span:nth-child(2) {
+  text-decoration: underline;
+}
+
+.image {
+  border-radius: 10px;
+  @include mobile-and-tablet {
+    height: $section-img-mobile-height !important;
+  }
+}

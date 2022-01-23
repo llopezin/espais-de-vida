@@ -1,4 +1,5 @@
 @import "../../../style/font/font.mixins.scss";
+@import "../../../style/variables/spacings";
 @import "../../../style/media-queries/media-queries.mixins.scss";
 
 .main {
@@ -12,15 +13,20 @@
   @include subheading-main;
 }
 
+.primary,
+.secondary {
+  margin-bottom: $md;
+  @include subheading-secondary;
+}
+
 .primary {
   text-align: center;
-  @include subheading-primary;
 }
 
 .secondary {
   text-align: left;
-  @include mobile {
+  margin-bottom: $md;
+  @include mobile-and-tablet {
     text-align: center;
   }
-  @include subheading-secondary;
 }

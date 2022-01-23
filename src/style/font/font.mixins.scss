@@ -32,39 +32,34 @@
 //headings
 @mixin main-heading-font {
   text-transform: uppercase;
-  @include base-heading($xxl, $xl, $xl);
+  @include base-heading($font-xxl, $font-xl, $font-xl);
 }
 
 @mixin section-heading-font {
-  @include base-heading($xl, $xl, $xl);
+  @include base-heading($font-xl, $font-xl, $font-xl);
 }
 
 @mixin single-section-heading-font {
   text-transform: uppercase;
-  @include base-heading($xxl, $xl, $xl);
+  @include base-heading($font-xxl, $font-xl, $font-xl);
 }
 
 //subheadings
 @mixin subheading-main {
   text-transform: uppercase;
   line-height: 1.875rem;
-  @include base-font($lg, $base, $base);
-}
-
-@mixin subheading-primary {
-  font-weight: 600;
-  @include base-font($logo, $lg, $lg);
+  @include base-font($font-lg, $font-base, $font-base);
 }
 
 @mixin subheading-secondary {
-  @include base-font($logo, $lg, $lg);
+  @include base-font($font-lg, $font-lg, $font-lg);
 }
 
 //logo
 @mixin logo-font {
-  @include base-font($logo, $logo, $logo);
+  @include base-font($font-logo, $font-logo, $font-logo);
   text-transform: uppercase;
   @include mobile-and-tablet {
-    font-size: $lg;
+    font-size: $font-lg;
   }
 }

@@ -10,5 +10,5 @@
     "Un espacio verde."
   ],
 
-  "bottomContentP1": "Si tu espacio de vida está en la preciosa ciudad de València o en el paraiso de Jávea, llámame y hablamos."
+  "bottomContentP1": ["Si tu ", "espacio de vida", " está en la preciosa ciudad de València o en el paraiso de Jávea, llámame y hablamos."]
 }

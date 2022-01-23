@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import * as style from "./ComoFunciona.module.scss";
 import copy from "./ComoFunciona.es.json";
 import SectionBody from "../../molecules/SectionBody/SectionBody";
@@ -11,21 +10,27 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const ComoFunciona = () => {
   const topContent = (
-    <div>
+    <div className={style.content}>
       <Subheading text={copy.topContentHeading} type="secondary" />
       <p>{copy.topContentP1}</p>
     </div>
   );
 
   const bottomContent = (
-    <div>
+    <div className={style.content}>
       <Subheading text={copy.bottomContentHeading} type="secondary" />
       <p>{copy.bottomContentP1}</p>
-      <Link text="contacta" className="prominent" />
+      <Link text="contacta" className="secondary" />
     </div>
   );
 
-  const image = <StaticImage src="../../../images/sofa.jpg" alt="" />;
+  const image = (
+    <StaticImage
+      src="../../../images/sofa.jpg"
+      alt=""
+      imgClassName={style.image}
+    />
+  );
 
   return (
     <section>

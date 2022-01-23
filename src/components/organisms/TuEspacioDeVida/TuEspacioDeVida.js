@@ -5,21 +5,27 @@ import Subheading from "../../atoms/Subheading/Subheading";
 import SectionHeading from "../../atoms/SectionHeading/SectionHeading";
 import Separator from "../../atoms/Separator/Separator";
 import { StaticImage } from "gatsby-plugin-image";
-import style from "./TuEspacioDeVida.module.scss";
+import * as style from "./TuEspacioDeVida.module.scss";
 
 const TuEspacioDeVida = () => {
-  const topContent = (
-    <div>
-      <Subheading text={copy.topContentHeading} />
-      {copy.topContentPs.map((p) => (
-        <p>{p}</p>
-      ))}
+  const bottomContent = (
+    <div className={style.bottom}>
+      <div className={style.bottomInner}>
+        {copy.topContentPs.map((p) => (
+          <p>{p}</p>
+        ))}
+      </div>
+      <p className={style.bottomP}>
+        {copy.bottomContentP1.map((text) => (
+          <span>{text}</span>
+        ))}
+      </p>
     </div>
   );
 
-  const bottomContent = <p>{copy.bottomContentP1}</p>;
-
-  const image = <StaticImage src="../../../images/vase.jpg" />;
+  const image = (
+    <StaticImage src="../../../images/vase.jpg" imgClassName={style.image} />
+  );
 
   return (
     <section>
@@ -28,7 +34,6 @@ const TuEspacioDeVida = () => {
       <Subheading text={copy.subheading} type="primary" />
       <SectionBody
         image={image}
-        topContent={topContent}
         bottomContent={bottomContent}
         type="imgRight"
       />

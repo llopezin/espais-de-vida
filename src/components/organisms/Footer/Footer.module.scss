@@ -1,0 +1,12 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+@import "../../../style/variables/colours";
+@import "../../../style/variables/spacings";
+
+.footer {
+  background-color: $background-secondary;
+}
+
+.inner {
+  max-width: 1080px;
+  height: 500px;
+}
