@@ -1,12 +1,12 @@
-@import "../../..//style//variables/colours";
-
-.secondary {
-  background-color: $btn-secondary;
-  color: $font-secondary;
-}
+@import "../../..//style/variables/colours";
 
 .primary {
   background-color: transparent;
   color: $font;
   border: solid 2px $btn-primary;
+}
+
+.secondary {
+  background-color: $btn-secondary;
+  color: $font-secondary;
 }
