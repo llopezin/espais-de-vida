@@ -32,7 +32,7 @@
 //headings
 @mixin main-heading-font {
   text-transform: uppercase;
-  @include base-heading($font-xxl, $font-xl, $font-xl);
+  @include base-heading($font-xxxl, $font-xxl, $font-xl);
 }
 
 @mixin section-heading-font {
@@ -48,7 +48,7 @@
 @mixin subheading-main {
   text-transform: uppercase;
   line-height: 1.875rem;
-  @include base-font($font-lg, $font-base, $font-base);
+  @include base-font($font-main-subhead, $font-base, $font-base);
 }
 
 @mixin subheading-secondary {
