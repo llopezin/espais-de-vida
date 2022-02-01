@@ -36,7 +36,7 @@
 }
 
 @mixin section-heading-font {
-  @include base-heading($font-xl, $font-xl, $font-xl);
+  @include base-heading($font-xl, $font-xl, $font-lg);
 }
 
 @mixin single-section-heading-font {
@@ -52,7 +52,7 @@
 }
 
 @mixin subheading-secondary {
-  @include base-font($font-lg, $font-lg, $font-lg);
+  @include base-font($font-md, $font-main-subhead, $font-main-subhead);
 }
 
 //logo
@@ -60,6 +60,6 @@
   @include base-font($font-logo, $font-logo, $font-logo);
   text-transform: uppercase;
   @include mobile-and-tablet {
-    font-size: $font-lg;
+    font-size: $font-md;
   }
 }
