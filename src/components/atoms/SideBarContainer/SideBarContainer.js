@@ -15,7 +15,12 @@ const SideBarContainer = ({ children, close }) => {
           </Button>
         </div>
       </div>
-      <div className={style.closeArea} onClick={close}></div>
+      <button
+        className={style.closeArea}
+        onClick={close}
+        type="button"
+        aria-label="close"
+      />
     </div>
   );
 };
