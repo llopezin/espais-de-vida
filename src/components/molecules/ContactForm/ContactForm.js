@@ -1,7 +1,4 @@
 import React, { useRef } from "react";
-import PropTypes from "prop-types";
-import * as style from "./ContactForm.module.scss";
-import Textarea from "../../atoms/Textarea/Textarea";
 
 const ContactForm = () => {
   return (
