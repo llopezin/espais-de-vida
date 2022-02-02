@@ -7,6 +7,7 @@ const SectionBody = ({
   bottomContent,
   image,
   type = "imgRight",
+  imageSize = "",
 }) => {
   return (
     <div
@@ -15,7 +16,7 @@ const SectionBody = ({
       }`}
     >
       {topContent && <div className={style.top}>{topContent}</div>}
-      <div className={style.image}>{image}</div>
+      <div className={`${style.image} ${style[imageSize]}`}>{image}</div>
       <div className={style.bottom}>{bottomContent}</div>
     </div>
   );
@@ -25,4 +26,5 @@ export default SectionBody;
 
 SectionBody.propTypes = {
   type: PropTypes.oneOf(["imgRight", "imgLeft"]).isRequired,
+  imageSize: PropTypes.oneOf(["lg"]),
 };

@@ -4,6 +4,7 @@
 .image {
   border-radius: 10px;
   transform: rotateY(180deg) !important;
+  height: 600px !important;
   @include mobile-and-tablet {
     height: $section-img-mobile-height !important;
   }
