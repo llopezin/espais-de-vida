@@ -1,6 +1,7 @@
+@import "./media-queries/media-queries.mixins.scss";
+
 main,
-header,
-footer {
+header {
   max-width: 1080px;
   margin: auto;
 }
@@ -11,4 +12,9 @@ main {
 
 section {
   padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+  @include mobile-and-tablet {
+    padding: 2rem 1rem;
+  }
 }

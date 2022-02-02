@@ -4,11 +4,8 @@
 
 .separator {
   height: 0.625rem;
-  margin: $xs auto $md;
+  margin: $xs auto $lg;
   background-color: $text-detailing;
-  @include mobile {
-    margin-right: 0;
-  }
 }
 
 .md {
@@ -17,4 +14,8 @@
 
 .separator.lg {
   width: 10rem;
+  margin-bottom: $md;
+  @include mobile {
+    margin-right: 0;
+  }
 }

@@ -1,0 +1,8 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.main {
+  min-height: min(600px, 65vw);
+  @include mobile {
+    min-height: min(416px, 83vw);
+  }
+}

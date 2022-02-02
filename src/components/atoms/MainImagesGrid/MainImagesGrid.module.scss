@@ -1,0 +1,62 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.imagesWrap {
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.875rem;
+  max-height: 600px;
+
+  @include mobile {
+    display: block;
+    width: 100vw;
+    left: -1.25rem;
+    padding: 0;
+  }
+}
+
+.secondaryImageWrap,
+.mainImageWrap {
+  border-radius: 10px;
+}
+
+.secondaryImageWrap {
+  display: block;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  opacity: 0.7;
+  @include mobile {
+    display: none;
+  }
+}
+
+.mainImageWrap {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-content: end;
+  padding-left: 15%;
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mainImageWrap img {
+  @include mobile {
+    //    height: min(345px, 55vw) !important;
+    max-width: 50% !important;
+    max-height: 370px;
+    object-position: left !important;
+    object-fit: cover !important;
+  }
+}

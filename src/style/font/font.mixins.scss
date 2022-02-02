@@ -32,52 +32,34 @@
 //headings
 @mixin main-heading-font {
   text-transform: uppercase;
-  @include base-heading($xxl, $xl, $lg);
+  @include base-heading($font-xxxl, $font-xxl, $font-xl);
 }
 
 @mixin section-heading-font {
-  @include base-heading($xl, $lg, $lg);
+  @include base-heading($font-xl, $font-xl, $font-lg);
 }
 
 @mixin single-section-heading-font {
   text-transform: uppercase;
-  @include base-heading($xxl, $xl, $xl);
+  @include base-heading($font-xxl, $font-xl, $font-xl);
 }
 
 //subheadings
 @mixin subheading-main {
   text-transform: uppercase;
-  @include base-font($md, $base, $base);
-}
-
-@mixin subheading-primary {
-  @include base-font($logo, $md, $md);
+  line-height: 1.875rem;
+  @include base-font($font-main-subhead, $font-base, $font-base);
 }
 
 @mixin subheading-secondary {
-  @include base-font($logo, $md, $md);
+  @include base-font($font-md, $font-main-subhead, $font-main-subhead);
 }
 
 //logo
 @mixin logo-font {
-  @include base-font($logo, $logo, $logo);
+  @include base-font($font-logo, $font-logo, $font-logo);
   text-transform: uppercase;
   @include mobile-and-tablet {
-    font-size: $md;
-  }
-}
-
-@mixin text-decoration($width) {
-  position: relative;
-  &::after {
-    @include desktop {
-      content: "";
-      position: absolute;
-      width: $width;
-      height: 0.625rem;
-      bottom: -1.25rem;
-      left: calc(50% - ($width/2));
-      background-color: $text-detailing;
-    }
+    font-size: $font-md;
   }
 }

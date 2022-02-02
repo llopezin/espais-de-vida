@@ -26,7 +26,7 @@
   flex-grow: 1;
   height: 100%;
   max-width: 90%;
-  padding: $md;
+  padding: $lg;
   background-color: $background-secondary;
   animation: appear-left 80ms;
 }
@@ -43,7 +43,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: $md;
+  margin: $lg;
 }
 
 @keyframes appear-left {

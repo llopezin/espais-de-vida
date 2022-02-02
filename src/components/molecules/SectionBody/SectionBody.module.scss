@@ -1,0 +1,74 @@
+@import "../../../style/media-queries/media-queries.mixins.scss";
+@import "../../../style/variables/img-sizes";
+@import "../../../style/variables/spacings";
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  @include mobile-and-tablet {
+    display: block;
+  }
+}
+
+.noTopContent {
+  grid-template-rows: auto;
+}
+
+.top,
+.bottom,
+.image {
+  padding-inline: 2rem;
+  @include mobile {
+    padding-inline: 0rem;
+  }
+}
+
+.bottom,
+.image {
+  @include mobile-and-tablet {
+    margin-top: $xl;
+  }
+}
+
+.image {
+  grid-row: 1 / 3;
+  opacity: 0.85;
+  border-radius: 10px;
+  @include mobile-and-tablet {
+    max-height: $section-img-mobile-height;
+  }
+}
+
+.imgRight .top {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.imgRight .bottom {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+.imgRight .image {
+  grid-column: 2 / 3;
+}
+
+.imgLeft .top {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.imgLeft .bottom {
+  grid-column: 2 / 3;
+  grid-row: 2 / 2;
+}
+
+.imgLeft .image {
+  grid-column: 1 / 2;
+}
+
+.noTopContent.imgLeft .bottom,
+.noTopContent.imgRight .bottom {
+  grid-row: 1 / 3;
+}

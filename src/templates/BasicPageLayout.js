@@ -1,14 +1,15 @@
-import React from 'react'
-import Header from '../components/organisms/Header/Header'
+import React from "react";
+import Footer from "../components/organisms/Footer/Footer";
+import Header from "../components/organisms/Header/Header";
 
 const BasicPageLayout = ({ hasHeader = true, hasFooter = true, children }) => {
   return (
     <>
       <Header />
       <main>{children}</main>
-      <footer>TO DDO: Create footer</footer>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default BasicPageLayout
+export default BasicPageLayout;

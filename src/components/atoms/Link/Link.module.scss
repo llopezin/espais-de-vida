@@ -1,13 +1,10 @@
 @import "../../../style/variables/colours";
+@import "../../../style/variables/spacings";
+@import "../../../style/media-queries/media-queries.mixins.scss";
 
 .prominent {
   color: $font;
   border: solid 2px $btn-primary;
-}
-
-.secondary,
-.secondary:visited {
-  color: $font-secondary;
 }
 
 .prominent,
@@ -16,4 +13,14 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.secondary,
+.secondary:visited {
+  display: inline-block;
+  margin-top: $md;
+  padding: 1rem 1.25rem;
+  background-color: $btn-secondary;
+  color: $font-secondary;
+  border-radius: 4px;
 }

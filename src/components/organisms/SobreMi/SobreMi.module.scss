@@ -1,0 +1,16 @@
+@import "../../../style/variables/img-sizes";
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.image {
+  border-radius: 10px;
+  transform: rotateY(180deg) !important;
+  @include mobile-and-tablet {
+    height: $section-img-mobile-height !important;
+  }
+}
+
+.content {
+  @include mobile-and-tablet {
+    position: relative;
+  }
+}

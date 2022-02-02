@@ -9,6 +9,6 @@ const SectionHeading = ({ type = "standard", text }) => {
 export default SectionHeading;
 
 SectionHeading.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["standard", "main", "single"]),
 };
