@@ -8,7 +8,11 @@
   background-color: $text-detailing;
 }
 
-.md {
+.separator.left {
+  margin-left: 0;
+}
+
+.separator.md {
   width: 6rem;
 }
 

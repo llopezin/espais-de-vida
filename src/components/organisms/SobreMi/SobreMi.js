@@ -10,7 +10,7 @@ const SobreMi = () => {
   const topContent = (
     <div className={style.content}>
       <SectionHeading text="una frase corta sobre ti" type="single" />
-      <Separator length="md" />
+      <Separator length="md" position="left" />
       <p>{copy.topContentP1}</p>
     </div>
   );
@@ -23,9 +23,11 @@ const SobreMi = () => {
 
   const image = (
     <StaticImage
-      src="../../../images/dog.jpg"
+      src="../../../images/portrait.jpg"
       alt=""
       imgClassName={style.image}
+      objectPosition="center"
+      height={600}
     />
   );
 
@@ -36,6 +38,7 @@ const SobreMi = () => {
         topContent={topContent}
         bottomContent={bottomContent}
         type="imgLeft"
+        imageSize="lg"
       />
     </section>
   );
