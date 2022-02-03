@@ -1,0 +1,24 @@
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border: solid 1px #b8b3b3;
+  font-family: questrial;
+}
+
+.contactForm input {
+  height: 36px;
+}
+
+.contactForm textarea {
+  height: 60px;
+}
+
+.contactForm button {
+  width: 100%;
+  padding: 16px 24px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
