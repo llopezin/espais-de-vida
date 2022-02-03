@@ -3,7 +3,11 @@ import * as style from "./SectionHeading.module.scss";
 import PropTypes from "prop-types";
 
 const SectionHeading = ({ type = "standard", text }) => {
-  return <h1 className={style[type]}>{text}</h1>;
+  return (type = "main" ? (
+    <h1 className={style[type]}>{text}</h1>
+  ) : (
+    <h2 className={style[type]}>{text}</h2>
+  ));
 };
 
 export default SectionHeading;
