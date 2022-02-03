@@ -6,7 +6,11 @@ import * as style from "./ContactForm.module.scss";
 const ContactForm = () => {
   return (
     <Section>
+      <p id="form-description" className={style.description}>
+        Si quieres saber más, ponte en contacto:
+      </p>
       <form
+        aria-describedby="form-description"
         className={style.contactForm}
         name="Contact Form"
         method="POST"
