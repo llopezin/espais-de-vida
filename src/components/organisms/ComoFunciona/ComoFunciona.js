@@ -20,7 +20,7 @@ const ComoFunciona = () => {
     <div className={style.content}>
       <Subheading text={copy.bottomContentHeading} type="secondary" />
       <p>{copy.bottomContentP1}</p>
-      <Link text="contacta" className="secondary" />
+      <Link to={`/contact`} text="contacta" className="secondaryLight" />
     </div>
   );
 

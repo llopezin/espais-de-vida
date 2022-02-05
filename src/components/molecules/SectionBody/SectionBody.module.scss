@@ -78,7 +78,7 @@
 }
 
 .image.lg {
-  @include mobile {
+  @include mobile-and-tablet {
     max-height: none;
     height: 470px;
   }
