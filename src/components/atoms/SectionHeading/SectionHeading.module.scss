@@ -10,11 +10,8 @@
 }
 
 .single {
-  max-width: 9ch;
-  @include mobile {
-    max-width: 8ch;
-  }
-  @include single-section-heading-font;
+  text-align: left;
+  @include section-heading-font;
 }
 
 .standard {
