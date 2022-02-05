@@ -16,11 +16,18 @@
 }
 
 .secondary,
-.secondary:visited {
+.secondaryLight,
+.secondary:visited,
+.secondaryLight:visited {
   display: inline-block;
   margin-top: $md;
   padding: 1rem 1.25rem;
-  background-color: $btn-secondary;
+  background-color: transparent;
   color: $font-secondary;
   border-radius: 4px;
+}
+
+.secondaryLight,
+.secondaryLight:visited {
+  background-color: $btn-secondary;
 }

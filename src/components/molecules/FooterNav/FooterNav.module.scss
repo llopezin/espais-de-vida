@@ -1,0 +1,45 @@
+@import "../../../style/variables/colours";
+@import "../../../style/media-queries/media-queries.mixins.scss";
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 35px 0;
+  @include mobile-and-tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.link,
+.link:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: $background;
+  @include mobile-and-tablet {
+    margin-bottom: 20px;
+  }
+}
+
+li:last-child .link {
+  @include mobile-and-tablet {
+    margin-bottom: 0px;
+  }
+}
+
+.link path {
+  fill: $background;
+}
+
+.link:hover span {
+  text-decoration: underline;
+}
+
+.link span {
+  margin-left: 10px;
+}

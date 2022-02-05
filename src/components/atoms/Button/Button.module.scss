@@ -4,9 +4,15 @@
   background-color: transparent;
   color: $font;
   border: solid 2px $btn-primary;
+  cursor: pointer;
 }
 
 .secondary {
   background-color: $btn-secondary;
   color: $font-secondary;
+  cursor: pointer;
+}
+
+.secondary:hover {
+  background-color: darken($btn-secondary, 5%);
 }
