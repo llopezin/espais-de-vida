@@ -31,3 +31,7 @@
 .secondaryLight:visited {
   background-color: $btn-secondary;
 }
+
+.secondaryLight:hover {
+  background-color: darken($btn-secondary, 5%);
+}
