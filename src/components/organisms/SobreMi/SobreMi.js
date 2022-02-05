@@ -5,13 +5,29 @@ import SectionBody from "../../molecules/SectionBody/SectionBody";
 import SectionHeading from "../../atoms/SectionHeading/SectionHeading";
 import Separator from "../../atoms/Separator/Separator";
 import { StaticImage } from "gatsby-plugin-image";
+import Subheading from "../../atoms/Subheading/Subheading";
 
 const SobreMi = () => {
   const topContent = (
     <div className={style.content}>
-      <SectionHeading text="una frase corta sobre ti" type="single" />
+      <SectionHeading
+        text="Cada persona necesita un espacio de vida diferente..."
+        type="single"
+      />
       <Separator length="md" position="left" />
-      <p>{copy.topContentP1}</p>
+      <Subheading
+        text="Un espacio que se ajuste a sus necesidades del día a día"
+        type="secondary"
+      />
+      {copy.topContentPs.map((text, i) =>
+        i === 4 ? (
+          <>
+            <Separator /> <p className="quote">{text}</p> <Separator />
+          </>
+        ) : (
+          <p>{text}</p>
+        )
+      )}
     </div>
   );
 
