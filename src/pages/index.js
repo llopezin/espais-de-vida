@@ -7,22 +7,27 @@ import ComoFunciona from "../components/organisms/ComoFunciona/ComoFunciona";
 import TuEspacioDeVida from "../components/organisms/TuEspacioDeVida/TuEspacioDeVida";
 import MainImagesGrid from "../components/atoms/MainImagesGrid/MainImagesGrid";
 import Section from "../components/atoms/Section/Section";
+import Head from "../components/atoms/Head/Head";
 
 const home = () => {
   return (
-    <BasicPageLayout>
-      <Section type='main'>
-        <MainImagesGrid />
-        <SectionHeading text="espacios de vida" type="main" />
-        <Separator length="lg" />
-        <Subheading
-          text="CUÉNTAME QUÉ NECESITAS, YO LO ENCUENTRO"
-          type="main"
-        />
-      </Section>
-      <TuEspacioDeVida />
-      <ComoFunciona />
-    </BasicPageLayout>
+    <>
+      <Head title="Espacios de vida" description="" />
+
+      <BasicPageLayout>
+        <Section type="main">
+          <MainImagesGrid />
+          <SectionHeading text="espacios de vida" type="main" />
+          <Separator length="lg" />
+          <Subheading
+            text="CUÉNTAME QUÉ NECESITAS, YO LO ENCUENTRO"
+            type="main"
+          />
+        </Section>
+        <TuEspacioDeVida />
+        <ComoFunciona />
+      </BasicPageLayout>
+    </>
   );
 };
 
