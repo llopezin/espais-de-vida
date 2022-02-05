@@ -23,6 +23,7 @@ const FooterNav = () => {
         <a className={style.link} href="tel:605506068">
           <PhoneIcon />
           <span>605506068</span>
+          <span className={style.small}>(A partir las 17:30)</span>
         </a>
       </li>
     </ul>
