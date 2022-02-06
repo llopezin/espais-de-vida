@@ -12,7 +12,7 @@ const SectionBody = ({
   return (
     <div
       className={`${style.wrap} ${style[type]} ${
-        !topContent && style.noTopContent
+        !topContent ? style.noTopContent : ""
       }`}
     >
       {topContent && <div className={style.top}>{topContent}</div>}

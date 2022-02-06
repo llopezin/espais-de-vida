@@ -61,11 +61,27 @@
 
 .imgLeft .bottom {
   grid-column: 2 / 3;
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
+}
+
+.imgLeft .image.lg + .bottom {
+  grid-column: 1 / 3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  @include mobile-and-tablet {
+    text-align: left;
+  }
+}
+
+.imgLeft .image.lg + .bottom p {
+  margin-bottom: 20px;
 }
 
 .imgLeft .image {
   grid-column: 1 / 2;
+  // grid-row: 2 / 3;
+  grid-row: 1 / 3;
 }
 
 .noTopContent.imgLeft .bottom,

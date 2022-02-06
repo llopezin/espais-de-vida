@@ -19,20 +19,23 @@ const SobreMi = () => {
         text="Un espacio que se ajuste a sus necesidades del día a día"
         type="secondary"
       />
-      {copy.topContentPs.map((text, i) =>
-        i === 4 ? (
-          <>
-            <Separator /> <p className="quote">{text}</p> <Separator />
-          </>
-        ) : (
-          <p>{text}</p>
-        )
-      )}
+      {copy.topContentPs1.map((text, i) => (
+        <p>{text}</p>
+      ))}
     </div>
   );
 
   const bottomContent = (
     <div className={style.content}>
+      {copy.topContentPs2.map((text, i) =>
+        i === 0 ? (
+          <>
+            <p className="quote">{text}</p> <Separator />
+          </>
+        ) : (
+          <p>{text}</p>
+        )
+      )}
       <p>{copy.bottomContentP1}</p>
     </div>
   );
