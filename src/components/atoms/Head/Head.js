@@ -17,6 +17,10 @@ const Head = ({ title, description }) => {
         content="inmobiliaria, casas, chalet, valencia, javea, comprar"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="google-site-verification"
+        content="kb_XvjHLoiLusyJxH2hhUOVWA7S4LNwkNuHVQoxU1Xo"
+      />
     </Helmet>
   );
 };

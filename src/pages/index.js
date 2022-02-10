@@ -12,7 +12,10 @@ import Head from "../components/atoms/Head/Head";
 const home = () => {
   return (
     <>
-      <Head title="Espacios de vida" description="" />
+      <Head
+        title="Espacios de vida"
+        description="Encuentra tu espacio de vida en Valencia o Javea. Una casa cerca del mar, un piso acogedor con sitio para toda la familia, un espacio luminoso..."
+      />
 
       <BasicPageLayout>
         <Section type="main">
