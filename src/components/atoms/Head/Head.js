@@ -19,7 +19,7 @@ const Head = ({ title, description }) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="google-site-verification"
-        content="kb_XvjHLoiLusyJxH2hhUOVWA7S4LNwkNuHVQoxU1Xo"
+        content="iR16DcmMB3-I8FIy3TIZsLiAQgipkqCu9Mk9kLSQWkg"
       />
     </Helmet>
   );
