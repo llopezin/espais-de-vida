@@ -45,5 +45,11 @@ li:last-child .link {
 }
 
 .small {
+  display: block;
   font-size: 0.8rem;
+}
+
+.phoneWrap {
+  display: flex;
+  flex-direction: column;
 }
