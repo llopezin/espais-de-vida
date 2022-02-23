@@ -1,22 +1,26 @@
-require("dotenv").config();
+require('dotenv').config()
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.espacios-de-vida.com`
+  },
   plugins: [
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require("sass"),
-      },
+        implementation: require('sass')
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-react-helmet",
-  ],
-};
+    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sitemap`
+  ]
+}
