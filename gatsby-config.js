@@ -18,9 +18,26 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      output: ''
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ['UA-221384300-1'],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true
+        }
+      }
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-react-helmet',
-    `gatsby-plugin-sitemap`
+    'gatsby-plugin-react-helmet'
   ]
 }
