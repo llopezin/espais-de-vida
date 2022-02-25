@@ -36,6 +36,7 @@ module.exports = {
         }
       }
     },
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet'
