@@ -45,6 +45,7 @@ Thumbs.db
 
 # private
 .env
+.env.* 
 
 # cache
 .cache

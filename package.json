@@ -14,6 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "dotenv": "^16.0.0",
     "gatsby": "^4.0.2",
     "gatsby-cli": "^4.2.0",
     "gatsby-plugin-google-gtag": "^4.8.0",
@@ -23,7 +24,7 @@
     "gatsby-plugin-sass": "^5.1.0",
     "gatsby-plugin-sharp": "^4.5.2",
     "gatsby-plugin-sitemap": "^5.7.0",
-    "gatsby-source-contentful": "^6.0.0",
+    "gatsby-source-contentful": "^6.1.4",
     "gatsby-source-filesystem": "^4.5.2",
     "node-sass": "^6.0.1",
     "react": "^17.0.1",
