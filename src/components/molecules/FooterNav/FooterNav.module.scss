@@ -3,15 +3,36 @@
 
 .list {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: left;
   align-items: center;
-  padding: 35px 0;
+  padding: 35px 90px;
   @include mobile-and-tablet {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 35px 0;
   }
+}
+
+.list li {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list .phone {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.list .phone:last-of-type {
+  grid-row: 2/3;
 }
 
 .link,
@@ -19,11 +40,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: $background;
-  @include mobile-and-tablet {
-    margin-bottom: 20px;
-  }
 }
 
 li:last-child .link {
@@ -45,7 +63,6 @@ li:last-child .link {
 }
 
 .small {
-  display: block;
   font-size: 0.8rem;
 }
 

@@ -9,26 +9,22 @@ const FooterNav = () => {
   return (
     <ul className={style.list}>
       <li>
-        <a className={style.link} href='mailto:nataliaferrus77@gmail.com'>
+        <a
+          className={style.link}
+          href='mailto:espaciosdevidavalencia@gmail.com'
+        >
           <EmailIcon />
-          <span>nataliaferrus77@gmail.com</span>
+          <span>espaciosdevidavalencia@gmail.com</span>
         </a>
       </li>
+
       <li>
         <a className={style.link} href='https://wa.me/34605506068'>
           <WhatsappIcon />
-          <span>Contacta por whatsapp</span>
+          <span>Contacta en Whatsapp</span>
         </a>
       </li>
-      <li>
-        <a className={style.link} href='tel:605506068'>
-          <PhoneIcon />
-          <div className={style.phoneWrap}>
-            <span>605506068</span>
-            <span className={style.small}>(A partir las 17:30)</span>
-          </div>
-        </a>
-      </li>
+
       <li>
         <a
           className={style.link}
@@ -37,6 +33,26 @@ const FooterNav = () => {
         >
           <LinkedInIcon />
           <span>LinkedIn</span>
+        </a>
+      </li>
+
+      <li className={style.phone}>
+        <a className={style.link} href='tel:663477006'>
+          <PhoneIcon />
+          <div>
+            <span>663477006</span>
+            <span className={style.small}>(de 10:0 a 13:30)</span>
+          </div>
+        </a>
+      </li>
+
+      <li className={style.phone}>
+        <a className={style.link} href='tel:605506068'>
+          <PhoneIcon />
+          <div>
+            <span>605506068</span>
+            <span className={style.small}>(desde las 17:30)</span>
+          </div>
         </a>
       </li>
     </ul>
