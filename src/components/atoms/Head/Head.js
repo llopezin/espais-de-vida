@@ -6,7 +6,7 @@ const Head = ({ title, description }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'en'
+        lang: 'es'
       }}
     >
       <meta charSet='utf-8' />
