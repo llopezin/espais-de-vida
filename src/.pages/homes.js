@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
+import BasicPageLayout from '../templates/BasicPageLayout'
 
 const Homes = () => {
   const {
@@ -17,6 +18,7 @@ const Homes = () => {
               }
             }
             price
+            bathrooms
             rooms
             slug
             title
@@ -27,14 +29,14 @@ const Homes = () => {
     }
   `)
   return (
-    <div>
+    <BasicPageLayout>
       homes
       {homes.map(({ node: home }) => (
         <div key={home.id}>
           {home.title}:{home.price}
         </div>
       ))}
-    </div>
+    </BasicPageLayout>
   )
 }
 
