@@ -1,12 +1,17 @@
-import React from 'react'
-import SectionHeading from '../components/atoms/SectionHeading/SectionHeading'
-import Subheading from '../components/atoms/Subheading/Subheading'
+import React from "react";
+import BasicPageLayout from "../templates/BasicPageLayout";
+import SobreMi from "../components/organisms/SobreMi/SobreMi";
+import Head from "../components/atoms/Head/Head";
 
-export default function () {
+const about = () => {
   return (
-    <div className='center-message'>
-      <SectionHeading text='Pagina bajo mantenimiento' />
-      <Subheading text='Volveremos pronto' />
-    </div>
-  )
-}
+    <>
+      <Head title="Sobre mi" description="" />
+      <BasicPageLayout>
+        <SobreMi />
+      </BasicPageLayout>
+    </>
+  );
+};
+
+export default about;
