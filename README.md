@@ -4,7 +4,7 @@ Welcome to Espais de vida. This project is built using Gatsby, a powerful and fa
 
 ## Getting Started
 
-To get started with the Homes Site project, you'll need to have Node.js and Gatsby CLI installed on your machine.
+To get started with the Homes Site project, you'll need to have Node.js (v16) and Gatsby CLI installed on your machine.
 
 1. **Clone the repository**
 
